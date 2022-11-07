@@ -11,7 +11,7 @@ import IconButton from '@mui/material/IconButton';
 import SearchIcon from '@mui/icons-material/Search';
 import RefreshIcon from '@mui/icons-material/Refresh';
 
-import Post from '../components/post/post';
+import Cards from '../components/cards';
 
 export default function Content() {
   return (
@@ -52,8 +52,7 @@ export default function Content() {
         </Toolbar>
       </AppBar>
       <Typography sx={{ my: 5, mx: 2 }} color="text.secondary" align="center">
-            <Post/>
-            <Post/>
+            <Cards/>
       </Typography>
     </Paper>
   );
