@@ -11,6 +11,8 @@ import IconButton from '@mui/material/IconButton';
 import SearchIcon from '@mui/icons-material/Search';
 import RefreshIcon from '@mui/icons-material/Refresh';
 
+import Post from '../components/post/post';
+
 export default function Content() {
   return (
     <Paper sx={{ maxWidth: 936, margin: 'auto', overflow: 'hidden' }}>
@@ -50,7 +52,8 @@ export default function Content() {
         </Toolbar>
       </AppBar>
       <Typography sx={{ my: 5, mx: 2 }} color="text.secondary" align="center">
-        No users for this project yet
+            <Post/>
+            <Post/>
       </Typography>
     </Paper>
   );
