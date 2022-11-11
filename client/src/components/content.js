@@ -12,8 +12,15 @@ import SearchIcon from '@mui/icons-material/Search';
 import RefreshIcon from '@mui/icons-material/Refresh';
 
 import Cards from '../components/cards';
-
+import {useNavigate} from 'react-router-dom';
 export default function Content() {
+
+  const navigate = useNavigate();
+  const navigatetoForm = () => {
+        navigate("/form");
+  }
+
+
   return (
     <Paper sx={{ maxWidth: 936, margin: 'auto', overflow: 'hidden' }}>
       <AppBar
@@ -39,7 +46,7 @@ export default function Content() {
               />
             </Grid>
             <Grid item>
-              <Button variant="contained" sx={{ mr: 1 }}>
+              <Button onClick={navigatetoForm()} variant="contained" sx={{ mr: 1 }}>
                 Add user
               </Button>
               <Tooltip title="Reload">
